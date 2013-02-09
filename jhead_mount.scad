@@ -70,16 +70,16 @@ module jhead_topend() {
       cylinder(10, r=cone_top + cone_wall, center=true, $fn=50);
 
       union() {
-        cylinder(10, r=1.7, center=true, $fn=25); // M4 Pneumatic
+        cylinder(10, r=2, center=true, $fn=25); // M5 Pneumatic
         translate([0, 0, -5.2 / 2])
-          cylinder(4.8, r=8.1, center=true, $fn=25); // 16mm Hotend outer dia
+          cylinder(4.8, r=8.3, center=true, $fn=25); // 16mm Hotend outer dia
       }
 
       // bores
       for (a = [0, 120, 240]) {
         rotate([0, 0, a])
           translate([bore_displacement, 0, 5])
-            cylinder(20, r=1.5, center=true, $fn=25);
+            cylinder(20, r=1.6, center=true, $fn=25);
       }
 
       // chamfers

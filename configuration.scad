@@ -13,7 +13,7 @@ frame_thickness=6;   				// 6mm acrylic
 pcb_thickness=2;					    // used for rendering PCB and approximating build volume
 
 //smooth_rod_length=495;  			// determins vertical build height with 508 for 8" 
-smooth_rod_length=580;  			
+smooth_rod_length=620;  			
 
 rod_diameter=8;						// might be interesting to have larger rods
 
